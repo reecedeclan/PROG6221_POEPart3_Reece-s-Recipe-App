@@ -1,0 +1,33 @@
+﻿<Window x:Class="PROG6221_ST10043367_POEPart3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Reece's Recipe App - PROG6221 Final Portfolio of Evidence" Height="450" Width="800">
+    <Grid x:Name="CurrentRecipes" Background="LightSkyBlue">
+        <Label x:Name="lblMainHeading" FontFamily="Arial" FontStyle="Normal" Content="Welcome to Reece's Recipe Application" FontSize="30" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Width="538"/>
+        <Button x:Name="btnInput" FontFamily="Arial" Content="Input new recipe" Background="Red" HorizontalAlignment="Left" Margin="30,337,0,0" VerticalAlignment="Top" Height="58" Width="105" Click="btnInput_Click"/>
+        <Button x:Name="btnDisplay" FontFamily="Arial" Content="Display Recipe" Background="Orange" HorizontalAlignment="Left" Margin="159,337,0,0" VerticalAlignment="Top" Width="106" Height="58" Click="btnDisplay_Click"/>
+        <Button x:Name="btnScale" FontFamily="Arial" Content="Scale Recipe" Background="Yellow" HorizontalAlignment="Left" Margin="289,337,0,0" VerticalAlignment="Top" Height="58" Width="105" Click="btnScale_Click"/>
+        <Button x:Name="btnFilter" FontFamily="Arial" Content="Filter Recipe" Background="LightGreen" HorizontalAlignment="Left" Margin="419,337,0,0" VerticalAlignment="Top" Height="58" Width="105" Click="btnFilter_Click"/>
+        <Button x:Name="btnReset" Content="Delete all recipes" FontFamily="Arial" Background="Aqua" HorizontalAlignment="Left" Height="58" Width="106" Margin="545,337,0,0" VerticalAlignment="Top" Click="btnReset_Click"/>
+        <Label x:Name="lblSmallHeading" FontStyle="Oblique" FontFamily="Arial" FontSize="15" HorizontalAlignment="Center" Margin="0,298,0,0" VerticalAlignment="Top">
+            <TextBlock Text="Please select from one of the following options:" TextDecorations="Underline"/>
+        </Label>
+        <ListBox x:Name="lbxDisplay" HorizontalAlignment="Left" Height="172" Margin="67,99,0,0" VerticalAlignment="Top" Width="333" />
+        <TextBox x:Name="tbxFilterFoodGroup" HorizontalAlignment="Left" Height="30" Margin="538,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="tbxRecipeName" HorizontalAlignment="Left" Height="30" Margin="538,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="tbxScaleFactor" HorizontalAlignment="Left" Height="30" Margin="538,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="lblFoodGroup" FontSize="10" Content="Food group:" FontFamily="Arial" HorizontalAlignment="Left" Margin="465,237,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.845,0.591"/>
+        <Label x:Name="lblRecipeName" FontSize="10" Content="Recipe name:" FontFamily="Arial" HorizontalAlignment="Left" Margin="461,134,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblScale" Content="Scaling factor" FontSize="10" FontFamily="Arial" HorizontalAlignment="Left" Margin="462,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.12,-0.374"/>
+        <Label x:Name="lblRecipeHeading" FontFamily="Arial" HorizontalAlignment="Left" Margin="67,75,0,0" VerticalAlignment="Top" Width="226">
+            <TextBlock Text="Current recipes stored:" TextDecorations="Underline" FontWeight="Bold"/>
+        </Label>
+        <Button x:Name="btnResettoOrigional" Content="Reset to Original" Background="LightPink" FontFamily="Arial" HorizontalAlignment="Left" Margin="670,337,0,0" VerticalAlignment="Top" Width="106" Height="58" Click="btnResettoOrigional_Click"/>
+        <Label x:Name="lblScaleHeading" FontFamily="Arial"  HorizontalAlignment="Left" Margin="462,101,0,0" VerticalAlignment="Top" Width="294">
+            <TextBlock Text="Scale Recipe:" TextDecorations="Underline" FontWeight="Bold"/>
+        </Label>
+        <Label x:Name="lblFilterHeading" FontFamily="Arial" HorizontalAlignment="Left" Margin="462,206,0,0" VerticalAlignment="Top" Height="26" Width="266">
+            <TextBlock Text="Filter Recipe:" TextDecorations="Underline" FontWeight="Bold"/>
+        </Label>
+    </Grid>
+</Window>

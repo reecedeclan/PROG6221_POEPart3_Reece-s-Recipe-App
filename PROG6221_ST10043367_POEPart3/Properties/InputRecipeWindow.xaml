@@ -1,0 +1,40 @@
+﻿<Window x:Class="PROG6221_ST10043367_POEPart3.InputRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Input New Recipe - PROG6221 Final Portfolio of Evidence" Height="517" Width="459">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label Content="New Recipe Name:" FontFamily="Arial" FontSize="15" Margin="5" />
+            <TextBox x:Name="tbxName" Margin="5" Width="258" />
+        </StackPanel>
+
+        <GroupBox Header="Ingredients" FontFamily="Arial" Margin="0,37,0,31" Grid.RowSpan="4" >
+            <StackPanel x:Name="spIngredients" Margin="5">
+                <Button x:Name="btnAddIngredient" Content="Add Ingredient" Click="btnAddIngredient_Click" />
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <Label Content="Ingredient" Width="98" />
+                    <Label Content="Quantity" Width="64" RenderTransformOrigin="0.448,0.621" />
+                    <Label Content="Unit" Width="37" />
+                    <Label Content="Calories" Width="65" />
+                    <Label Content="Food Group" Width="91" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Header="Recipe Steps" Margin="0,296,0,0" FontFamily="Arial" Grid.RowSpan="2">
+            <StackPanel x:Name="spSteps" Margin="5">
+                <Button x:Name="btnAddStep" Content="Add a step" Click="btnAddStep_Click" />
+            </StackPanel>
+        </GroupBox>
+
+
+        <Button Grid.Row="3" x:Name="btnSave" Content="Save" Click="btnSave_Click" FontFamily="Arial" FontSize="15" HorizontalAlignment="Right" Margin="5" />
+    </Grid>
+</Window>
